@@ -4,13 +4,17 @@
 
 .selection-content {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 .selection-btn {
     height: 32px;
+    width: 120px;
     border: none;
     border-radius: 8px;
+    margin: 0 10px;
+    cursor: pointer;
 }
 
 .bisque-color {
@@ -18,47 +22,58 @@
 }
 
 .aqua-color {
-    background-color: white;
+    background-color: bisque;
 }
 
 .luas-segitiga {
     text-align: center;
-    border: 1px;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    margin: 0px;
-    background: cornflowerblue;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 8px;
 }
 
-.luas-segitiga-content
-{
-    display: flex;
-    flex-direction: column;
+.luas-segitiga-content {
+    text-align: center;
+    margin: 16px 0;
 }
 
 .luas-segitiga-img {
-    height: 300px;
-    width: 300px;
-    border: 1px;
-    background-image: url(https://cilacapklik.com/wp-content/uploads/2020/09/Rumus-Luas-Dan-Keliling-Segitiga.png);
+    height: 200px;
+    width: 200px;
+    background-image: url('https://i.pinimg.com/564x/3c/27/40/3c2740f7092874bcdf92a8c69782e107.jpg');
     background-size: cover;
     background-position: center;
-    align-self: center;
+    margin: 0 auto;
 }
 
 .luas-s-f-h {
     text-align: center;
+    margin-top: 20px;
 }
 
 .input-wrapper {
-    width: 30%;
+    width: 90%;
+    margin: 10px auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-.input-wrapper>input {
-    width: 65%;
+.input-wrapper label {
+    flex: 1;
+    text-align: left;
+    font-size: 16px;
 }
+
+.input-wrapper input {
+    flex: 2;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
 
 input[type=number] {
     width: 100%;
@@ -70,10 +85,31 @@ input[type=number] {
     box-sizing: border-box;
 }
 
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
 .main-content {
     display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 90%;
+    gap: 20px;
 }
 
 .main-content>aside {
     flex: 1;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
 }
