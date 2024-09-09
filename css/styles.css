@@ -18,18 +18,18 @@
 }
 
 .bisque-color {
-    background-color: bisque;
+    background-color: palevioletred;
 }
 
 .aqua-color {
-    background-color: bisque;
+    background-color: palevioletred;
 }
 
 .luas-segitiga {
     text-align: center;
     padding-top: 16px;
     padding-bottom: 16px;
-    background-color: cornflowerblue;
+    background-color: palevioletred;
     color: white;
     border-radius: 8px;
 }
@@ -88,7 +88,7 @@ input[type=number] {
 button {
     width: 100%;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: palevioletred;
     color: white;
     border: none;
     border-radius: 4px;
@@ -96,7 +96,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #457fa0;
 }
 
 .main-content {
