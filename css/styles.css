@@ -1,9 +1,7 @@
-/* Header */
 .main-header {
     text-align: center;
 }
 
-/* Button Selection Area */
 .selection-content {
     display: flex;
     justify-content: center;
@@ -24,7 +22,7 @@
     background-color: palevioletred;
 }
 
-/* Luas dan Keliling Segitiga dan Jajar Genjang */
+
 .luas-segitiga,
 .luas-jajar-genjang {
     text-align: center;
@@ -44,19 +42,22 @@
 .luas-segitiga-img {
     height: 200px;
     width: 200px;
-    background-image: url(assets/sgt.png);
+    background-image: url('../assets/sgt.png');
     background-size: cover;
     background-position: center;
     margin: 0 auto;
+    border: 1px solid palevioletred; 
 }
+
 
 .luas-jajar-genjang-img {
     height: 200px;
-    width: 200px;
-    background-image: url(assets/jg.jpg);
+    width: 300px;
+    background-image: url('../assets/jg.jpg');
     background-size: cover;
     background-position: center;
     margin: 0 auto;
+    border: 1px solid palevioletred; 
 }
 
 .luas-s-f-h {
@@ -85,7 +86,7 @@
     border-radius: 4px;
 }
 
-/* Button */
+
 button {
     width: 100%;
     padding: 10px;
@@ -94,13 +95,14 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin: 5px 0;
 }
 
 button:hover {
     background-color: #457fa0;
 }
 
-/* Form Container for Luas and Keliling */
+
 .main-content {
     display: flex;
     justify-content: space-between;
@@ -116,7 +118,7 @@ button:hover {
     border-radius: 8px;
 }
 
-/* Additional Styles */
+
 header {
     margin-bottom: 20px;
 }
@@ -127,4 +129,10 @@ hr {
 
 h1, p {
     margin: 10px 0;
+}
+
+@media only screen and (max-width: 480px) {
+    .main-content {
+    flex-direction: column;
+    }
 }
