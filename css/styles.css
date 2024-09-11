@@ -1,7 +1,9 @@
+/* Header */
 .main-header {
     text-align: center;
 }
 
+/* Button Selection Area */
 .selection-content {
     display: flex;
     justify-content: center;
@@ -17,15 +19,14 @@
     cursor: pointer;
 }
 
-.bisque-color {
-    background-color: palevioletred;
-}
-
+.bisque-color,
 .aqua-color {
     background-color: palevioletred;
 }
 
-.luas-segitiga {
+/* Luas dan Keliling Segitiga dan Jajar Genjang */
+.luas-segitiga,
+.luas-jajar-genjang {
     text-align: center;
     padding-top: 16px;
     padding-bottom: 16px;
@@ -34,7 +35,8 @@
     border-radius: 8px;
 }
 
-.luas-segitiga-content {
+.luas-segitiga-content,
+.luas-jajar-genjang-content {
     text-align: center;
     margin: 16px 0;
 }
@@ -42,7 +44,16 @@
 .luas-segitiga-img {
     height: 200px;
     width: 200px;
-    background-image: url('https://i.pinimg.com/564x/3c/27/40/3c2740f7092874bcdf92a8c69782e107.jpg');
+    background-image: url(assets/sgt.png);
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+}
+
+.luas-jajar-genjang-img {
+    height: 200px;
+    width: 200px;
+    background-image: url(assets/jg.jpg);
     background-size: cover;
     background-position: center;
     margin: 0 auto;
@@ -74,17 +85,7 @@
     border-radius: 4px;
 }
 
-
-input[type=number] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
+/* Button */
 button {
     width: 100%;
     padding: 10px;
@@ -99,9 +100,10 @@ button:hover {
     background-color: #457fa0;
 }
 
+/* Form Container for Luas and Keliling */
 .main-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 0 auto;
     width: 90%;
     gap: 20px;
@@ -110,6 +112,19 @@ button:hover {
 .main-content>aside {
     flex: 1;
     border: 1px solid #ccc;
-    padding: 20px;
+    padding: 16px;
     border-radius: 8px;
+}
+
+/* Additional Styles */
+header {
+    margin-bottom: 20px;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+h1, p {
+    margin: 10px 0;
 }
