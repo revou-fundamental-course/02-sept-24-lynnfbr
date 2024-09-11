@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/script.js"></script>
 </head>
 
 <body>
     <header class="main-header">
         <h1>Welcome to Katik</h1>
-        <p>Hai sobat, Selamat datang di Katik</p>
+        <p>Hai sobat, Selamat datang di Katik :]</p>
+        <p>Ini adalah web apps sederhana yang berfungsi untuk menghitung luas dan keliling bangun datar</p>
     </header>
 
     <main>
@@ -21,8 +21,10 @@
             <button type="button" class="selection-btn aqua-color" onclick="showForm('jajar-genjang')">Jajar Genjang</button>
         </section>
 
-        <!-- Form Menghitung Segitiga -->
         <section class="main-content" id="form-segitiga" style="display: none;">
+            <div class="home-button-wrapper">
+                <button type="button" class="home-button" onclick="showForm('')">Home</button>
+            </div>
             <!-- Form Menghitung Luas Segitiga -->
             <aside>
                 <header>
@@ -64,7 +66,7 @@
 
                 <article class="luas-segitiga-content">
                     <div class="luas-segitiga-img"></div>
-                    <p>Rumus Keliling Segitiga: K = S1 + S2 + S3</p>
+                    <p>Rumus Keliling Segitiga: K = s1 + s2 + s3</p>
                 </article>
 
                 <hr />
@@ -96,6 +98,9 @@
 
         <!-- Form Menghitung Jajar Genjang -->
         <section class="main-content" id="form-jajar-genjang" style="display: none;">
+            <div class="home-button-wrapper">
+                <button type="button" class="home-button" onclick="showForm('')">Home</button>
+            </div>
             <!-- Form Menghitung Luas Jajar Genjang -->
             <aside>
                 <header>
@@ -163,6 +168,12 @@
             </aside>
         </section>
     </main>
+
+    <footer class="main-footer">
+        <p>© Linda Febriyanti</p>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>

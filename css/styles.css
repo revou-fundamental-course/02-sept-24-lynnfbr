@@ -1,7 +1,9 @@
+/* Header */
 .main-header {
     text-align: center;
 }
 
+/* Button Selection Area */
 .selection-content {
     display: flex;
     justify-content: center;
@@ -13,7 +15,7 @@
     width: 120px;
     border: none;
     border-radius: 8px;
-    margin: 0 10px;
+    margin: 10px;
     cursor: pointer;
 }
 
@@ -22,7 +24,24 @@
     background-color: palevioletred;
 }
 
+.home-button-wrapper {
+    text-align: center; 
+    margin-bottom: 0px; 
+}
 
+.home-button {
+    background-color: #efd5d5; /* Background color for the home button */
+    border: 1px solid #ccc; /* Border color for the home button */
+    padding: 10px 10px; /* Padding around the text */
+    font-size: 14px; /* Font size for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-bottom: 0px; /* Adds space below the button */
+    
+
+}
+
+
+/* Luas dan Keliling Segitiga dan Jajar Genjang */
 .luas-segitiga,
 .luas-jajar-genjang {
     text-align: center;
@@ -46,7 +65,7 @@
     background-size: cover;
     background-position: center;
     margin: 0 auto;
-    border: 1px solid palevioletred; 
+    border: 1px solid palevioletred; /* Menambahkan border untuk pengecekan */
 }
 
 
@@ -86,7 +105,7 @@
     border-radius: 4px;
 }
 
-
+/* Button */
 button {
     width: 100%;
     padding: 10px;
@@ -102,7 +121,7 @@ button:hover {
     background-color: #457fa0;
 }
 
-
+/* Form Container for Luas and Keliling */
 .main-content {
     display: flex;
     justify-content: space-between;
@@ -118,7 +137,7 @@ button:hover {
     border-radius: 8px;
 }
 
-
+/* Additional Styles */
 header {
     margin-bottom: 20px;
 }
@@ -130,6 +149,36 @@ hr {
 h1, p {
     margin: 10px 0;
 }
+
+/* Apply to html and body to enable full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content should take up available space */
+main {
+    flex: 1;
+}
+
+/* Footer styling */
+.main-footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    bottom: 0;
+}
+
+.main-footer p {
+    margin: 0;
+    color: #333;
+}
+
 
 @media only screen and (max-width: 480px) {
     .main-content {
